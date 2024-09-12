@@ -14,4 +14,7 @@ class Line:
         Returns:
             float or int: distance.
         """
-        pass
+        return ((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2) ** 0.5
+
+ln = Line(6, 8, -2, 2)
+print(ln.get_length())
